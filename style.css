@@ -1,0 +1,493 @@
+/* FONTS
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Raleway', sans-serif; */
+
+/* COLORS
+#E1E1DA light beige
+#212529 off black 
+#F3F3F2 off white
+#B1AE9B beige
+#9A9784 shadow beige
+*/
+
+body {
+    background-color: #E1E1DA;
+    font-family: 'Raleway', sans-serif;
+    color: #212529;
+    margin: 0.5em 0.25em;
+    border: 1px solid #212529;
+}
+
+h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 3rem;
+    margin: 0;
+    line-height: 1;
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-size: 1.01rem;
+}
+
+img, video {
+    max-width: 100%;
+}
+
+section {
+    margin: 1rem 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1000px;
+    /* border: 1px solid red; */
+}
+
+.btn {
+    color: #F3F3F2;
+    background-color: #B1AE9B;
+    padding: 0.5em 2em;
+    border-radius: 100px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 200;
+    box-shadow: -1px 2px 3px #9A9784;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #D5D3C8;
+    box-shadow: -1px 2px 3px #C3C1B2;
+    color: #565656;
+}
+
+/* main section */
+.main-section {
+    padding: 3em 0;
+    border-bottom: 1px solid #212529;
+}
+
+.main-section__p {
+    margin: 1.5em 0 2em;
+    line-height: 1.5;
+    font-size: 1.125rem;
+}
+
+.main-section__col-img {
+    display: flex;
+    justify-content: center;
+}
+
+.main-section__img {
+    margin: 3em 0 0;
+    border: 1px solid #212529;
+    width: 80%;
+}
+
+/* work experience */
+.work-exp {
+    border-top: 1px solid #212529;
+    border-bottom: 1px solid #212529;
+    padding: 2.5em 0;
+}
+
+.work-exp-grid {
+    display: grid;
+    gap: 1.75rem;
+    justify-items: center;
+    grid-auto-rows: auto
+    /* border: 1px solid green; */
+}
+
+.work-exp__card {
+    border: 1px solid #212529;
+    padding: 0 1.5em;
+    aspect-ratio: 1 / 1;
+    width: 70%;
+    
+}
+
+.work-exp__p {
+    text-align: justify;
+    font-size: 0.95rem;
+    line-height: 1.375;
+}
+
+.work-exp__list {
+    padding-left: 0;
+}
+
+.work-exp__list-item {
+    list-style: none;
+    padding-top: 0.375em;
+}
+
+/* my portfolio */
+.my-portfolio {
+    padding: 2.5em 0;
+    border-top: 1px solid #212529;
+    border-bottom: 1px solid #212529;    
+}
+.my-portfolio-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.my-portfolio-grid > :first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+} 
+
+.my-portfolio-grid > :last-child {
+    grid-column: span 2;
+}
+
+.my-portfolio-card {
+    border: 1px solid #212529;
+    text-align: center;
+}
+
+.my-portfolio__h4 {
+    margin: 0.5em 0 0;
+}
+
+.my-portfolio__p {
+    margin: 0.75em 0;
+    font-size: 0.9rem;
+}
+
+.my-portfolio__h4 > a {
+    text-decoration: none;
+    color: #212529;
+}
+
+.my-portfolio__p > a {
+    color: #212529;
+    font-style: italic;
+}
+
+.my-portfolio-card__text {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.simon-game-video {
+    margin-bottom: 0.5em;
+}
+
+#play-button, #play-button-2 {
+    font-size: 0.7rem;
+    border: none;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* things i like */
+.lovely-things {
+    padding: 2.5em 0;
+    border-bottom: 1px solid #212529; 
+}
+
+.lovely-things__h2 {
+    margin: 0;
+}
+
+.lovely-things__h3 {
+    font-style: italic;
+    margin: 1.5em 0 0.25em;
+}
+
+.lovely-things__p {
+    margin: 0.5em 0 2em;
+    line-height: 1.5;
+}
+
+.lovely-things__p--p {
+    text-align: right;
+}
+
+.lovely-things-flex {
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+
+    /* border: 1px solid green; */
+}
+
+.lovely-things-flex-child {
+    width: 45%;
+}
+
+/* socials */
+.contact-me {
+    padding: 1em 0 3em;
+    /* border-top: 1px solid #212529;
+    border-bottom: 1px solid #212529; */
+}
+
+.contact-me__a {
+    text-decoration: none;
+    font-style: italic;
+    color: #212529;
+    letter-spacing: 0.02em;
+}
+
+.contact-me__h3 {
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.form__input-data {
+    margin-top: 0.25rem;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 0.5fr 2fr 0.5fr;
+    gap: 0.25rem;
+    border: 1px solid #212529;
+    padding: 1rem;
+}
+
+.mensajes__form__btn {
+    border: none;
+    border-radius: 100px;
+    background-color: #B1AE9B;
+    padding: 0.5em 1.125em;
+    color: #F3F3F2;
+    margin-right: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+.div4 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.div5 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 0.5em auto;
+}
+
+.socials {
+    margin: 0.35em 0;
+    font-size: 1.75rem;
+}
+
+.socials-grid {
+    display: grid;
+    gap: 0.5em;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    font-size: 0.85rem;
+    border: 1px solid #212529;
+}
+
+.socials-grid-child + .socials-grid-child {
+    border-left: 1px solid #212529;
+}
+
+
+/* footer */
+footer {
+    font-size: 0.65rem;
+    text-align: center;
+}
+
+footer > p {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
+@media (min-width: 700px) {
+    /* main section */
+    .row-flex {
+        display: flex;
+        align-self: center;
+        gap: 1rem;
+    }
+
+    .col-flex {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .main-section__p {
+        font-size: 1rem;
+    }
+
+    .main-section__img {
+        margin-top: 0;
+        width: 100%;
+        height: auto;
+        align-self: flex-start;
+    }
+
+    /* work experience */
+    .work-exp-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+
+    .work-exp__card {
+        border: 1px solid #212529;
+        padding: 0 1.5em;
+        width: 80%;
+        aspect-ratio: 2 / 1;
+    }
+
+    /* my portfolio */
+    .my-portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* things i like */
+    .lovely-things-flex-child-img {
+        align-self: flex-end;
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        width: 80%;
+    }
+
+    .contact-me-socials-flex {
+        border-bottom: 1px solid #212529;
+        border-top: 1px solid #212529;
+        display: flex;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .contact-me {
+        width: 60%;
+    }
+
+    .socials {
+        width: 35%;
+        padding: 1rem 0 0;
+    }
+
+    .socials-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        
+    }
+
+    .socials-grid-child + .socials-grid-child {
+        border-left: none;
+        border-top: 1px solid #212529;
+    }
+
+    /* work exp */
+    .work-exp-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .work-exp__card {
+        aspect-ratio: auto;
+    }
+
+    /* my portfolio and things i like */
+    .my-potfolio-and-lovely-things-flex {
+        display: flex;
+        border-top: 1px solid #212529;
+        border-bottom: 1px solid #212529;
+    }
+
+    /* my portfolio */
+    .my-portfolio { 
+        border: none;
+        width: 100%;
+    }
+
+    .my-portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .my-portfolio-grid > :first-child {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    } 
+    
+    .my-portfolio-grid > :last-child {
+        grid-column: span 2;
+    }
+
+    /* things i like */
+    .lovely-things {
+        border-bottom: none;
+        border-left: 1px solid #212529;
+        text-align: center;
+        width: 40%;
+    }
+
+    .lovely-things-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .lovely-things-flex-child {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .lovely-things__h3 {
+        margin-bottom: 1rem;
+    }
+
+    .lovely-things__p, .lovely-things__p--p {
+        margin: 0 0 0.5rem;
+        text-align: center;
+    }
+
+
+}
+
+@media(min-width: 1100px) {
+    .row-flex {
+        gap: 2rem;
+    }
+
+    h1 {
+        font-size: 3.75rem;
+    }
+
+    .main-section__p {
+        font-size: 1.125rem;
+    }
+}
